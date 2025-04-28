@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id ="desktop-nav"> 
+        <div class ="logo">Mery</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mery</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+<!-- Profile Section Start-->      
+      <section id="profile">
+        <div class="section__pic-container" style="border-radius: 50%; overflow: hidden; width: 500px; height: 500px;">
+          <img src="./assets/profile-pic.jpg" alt="Meriem profile picture" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Meriem</h1>
+          <p class="section__text__p2">Full-Stack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/meriem_resume.pdf')"
+            >
+              Download Resume
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="#" target="_blank">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="My LinkedIn profile"
+                  class="icon"
+                />
+              </a>
+            <a href="https://github.com/mery0111" target="_blank">
+                <img
+                  src="./assets/github.png"
+                  alt="My Github profile"
+                  class="icon"
+                />
+              </a>
+          </div>
+        </div>
+      </section>
+      
+<!-- About Section Start-->      
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">ABOUT ME</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/Porfile-pic2.jpg"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />Frontend Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bachelors Of Computer science </p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Hello! I’m Meriem, a second-year Computer Science student at the University of Oran 1.
+                Curious and motivated, I enjoy developing innovative solutions and exploring new technologies. With a growing foundation in [programming, algorithms, databases, and web development], I’m always eager to deepen my knowledge and take on new challenges.
+                When I’m not coding, I love discovering new ideas, learning new skills, and spending time with my friends.
+
+                <br>Let’s build something great together! </br>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+<!-- Experience Section Start-->      
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience In Technologies</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Other Technologies</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQl</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Linux</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+<!-- Project Section Start-->
+      <section id="projects">
+        <div class="project-list">
+          <div class="project">
+          <img src="./Images/cat_page.jpg" alt="image_2">
+              <div class="layer">
+                  <h3>Cat website pictures</h3>
+                 
+                  <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/mery0111/cat', '_blank');"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://mery0111.github.io/cat/', '_blank');"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+              </div>
+          </div>
+          <div class="project">
+              <img src="./Images/box.jpg" alt="image_1">
+              <div class="layer">
+                  <h3>Box</h3>
+                 
+                  <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/mery0111/box', '_blank');"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://mery0111.github.io/box/', '_blank');"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+              </div>
+          </div>
+          <div class="project">
+              <img src="./Images/form.jpg" alt="image_2">
+              <div class="layer">
+                  <h3>Form_page</h3>
+                  
+                  <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/mery0111/Formulaire', '_blank');"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://mery0111.github.io/Formulaire/', '_blank');"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+              </div>
+          </div>
+          <div class="project">
+              <img src="./Images/calculator.jpg" alt="image_3">
+              <div class="layer">
+                  <h3>Calculator</h3>
+                 
+                  <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/mery0111/Calculatrice', '_blank');"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://mery0111.github.io/Calculatrice/', '_blank');"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+              </div>
+          </div>
+          <!-- Hidden projects -->
+          <div class="project">
+              <img src="./Images/oran.jpg" alt="image_3">
+              <div class="layer">
+                  <h3>Oran page animation</h3>
+                  
+                  <div class="btn-container">
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/mery0111/Oran', '_blank');"
+                    >
+                        Github
+                    </button>
+                    <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://mery0111.github.io/Oran/', '_blank');"
+                    >
+                        Live Demo
+                    </button>
+                </div>
+              </div>
+          </div>
+          
+      </div>
+        
+
+      </section>
+
+<!-- Contact Section Start-->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:meriembentraa@gmail.com">meriembentraa@gmail.com</a></p>
+          </div>
+
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a href="https://www.linkedin.com/in/meriem-bentraa-777931362/" target="_blank" rel="noopener noreferrer">Meriem</a>
+            </p>
+          </div>
+          
+        </div>
+      </section>
+
+<!-- Footer Section Start-->      
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2025 @MeriemBentraa. All Rights Reserved.</p>
+       <!--  <p>View me in Light/Dark Mode, Change your theme in OS.</p> -->
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
