@@ -89,10 +89,19 @@
       text-align: center;
     }
     .section__pic-container {
-      width: auto;
-      height: 46vw;
+      width: 100%;         /* Prenez toute la largeur disponible */
+      max-width: 300px;     /* Limite la largeur sur grands écrans */
+      height: auto;         /* Adapter automatiquement la hauteur */
       justify-content: center;
+      align-items: center;
     }
+    .section__pic-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+
     .section__text__p2 {
       font-size: 1.25rem;
     }
